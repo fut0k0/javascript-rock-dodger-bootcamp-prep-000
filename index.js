@@ -8,6 +8,7 @@ const ROCKS = [];
 const START = document.getElementById('start');
 
 var gameInterval = null;
+var endGameCalled = 0;
 
 function checkCollision(rock) {
   const top = positionToInteger(rock.style.top);
