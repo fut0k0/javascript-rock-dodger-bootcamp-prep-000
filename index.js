@@ -52,6 +52,7 @@ function createRock(x) {
 }
 
 function endGame() {
+  endGameCalled = 1;
   clearInterval(gameInterval);
   ROCKS.forEach(function(rock) {
     rock.remove();
